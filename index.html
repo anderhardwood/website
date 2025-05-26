@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson Hardwood Floors | Premium Flooring & Remodeling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/css.gg@2.0.0/icons/css/menu.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <div id="loading-percentage">0%</div>
+    </div>
+
+    <div id="custom-cursor"></div>
+
+<header>
+    <div class="container">
+        <h1 class="logo">Anderson Hardwood Floors</h1>
+        <nav class="nav-links">
+            <i class="fa fa-close" style="font-size:36px" ></i>
+            <ul>
+                <li><a class="nav-link link1" href="#home">Home</a></li>
+                <li><a class="nav-link link2" href="#about">About</a></li>
+                <li><a class="nav-link link3" href="#services">Services</a></li>
+                <li><a class="nav-link link4" href="#gallery">Gallery</a></li>
+                <li><a class="nav-link link5" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <i class="gg-menu"></i>
+    </div>
+</header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Craftsmanship in Every Grain</h1>
+            <p class="subtitle">Premium hardwood flooring installation & remodeling in Kansas City</p>
+            <!-- <div class="cta-buttons">
+                <button class="cta-primary" id="estimate-btn">Free Estimate</button>
+                <button class="cta-secondary" id="explore-btn">Explore Our Work</button>
+            </div> -->
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Discover</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <p>For over a decade, Anderson Hardwood Floors has been transforming spaces across Kansas City with exceptional craftsmanship and attention to detail. Our main mission is to enhance the beauty and value of your space with premium hardwood floors or anything you need. We take pride in our attention to detail and commitment to customer satisfaction.</p>
+                <button class="reveal-btn" id="reveal-team">Meet Our Team</button>
+                <div class="hidden-content" id="team-content">
+                    <div class="team-member">
+                        <h3>Orlando Rodriguez</h3>
+                        <p>Founder & Master Craftsman</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="section-container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>REMODELING</h3>
+                    <p>We remodel houses, tell us everything that you want to change and after a discussion we will be able to start the job, remodeling your house to something you could've never imagined before</p>
+                    <!-- <button class="service-example-btn" data-service="installation">See Examples</button> -->
+                </div>
+                <div class="service-card">
+                    <h3>INSTALLATION</h3>
+                    <p>Installation is the process of installing the hardwood floor to a subfloor with either nails, glue, or staples.</p>
+                    <!-- <button class="service-example-btn" data-service="refinishing">See Examples</button> -->
+                </div>
+                <div class="service-card">
+                    <h3>FINISH</h3>
+                    <p>A finish is a top coat of water-based or oil-based stain, that gives the floor its nice every day color. Finish is an excellent method to personilze your hardwood floor.</p>
+                    <!-- <button class="service-example-btn" data-service="remodeling">See Examples</button> -->
+                </div>
+                <div class="service-card">
+                    <h3>REFINISH</h3>
+                    <p>Refinishing is a process of removing the top layer of the wood, so that the raw and fresh wood underneath may be revealed, so that the process of finishing may commence following this process.</p>
+                    <!-- <button class="service-example-btn" data-service="remodeling">See Examples</button> -->
+                </div>
+                <div class="service-card">
+                    <h3>ANYTHING ELSE</h3>
+                    <p>We can also do anything else just contact us with any questions and we can work something out to figure out if we can fullfill your job.</p>
+                    <!-- <button class="service-example-btn" data-service="remodeling">See Examples</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="section-container">
+            <h2 class="section-title">Our Work</h2>
+            <p class="section-subtitle">Click below to view our portfolio</p>
+            <button class="gallery-reveal-btn" id="reveal-gallery">View Gallery</button>
+            <div class="gallery-container hidden">
+                <div class="gallery-grid">
+                    <!-- Images will be loaded here dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> (913) 548-9275</p>
+                    <p><i class="fas fa-envelope"></i> andhardwoodfloors@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serving Kansas City Metro Area</p>
+                </div>
+                <form action="https://formsubmit.co/andhardwoodfloors@gmail.com" method="POST" class="contact-form">
+                    <input type="text" name="name"placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone number" placeholder="Your Phone">
+                    <textarea name="help" placeholder="How can we help you?" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">Anderson Hardwood Floors</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2024 Anderson Hardwood Floors. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    const navLinks = document.querySelector('.nav-links');
+    const link1 = document.querySelector('.link1');
+    const link2 = document.querySelector('.link2');
+    const link3 = document.querySelector('.link3');
+    const link4 = document.querySelector('.link4');
+    const link5 = document.querySelector('.link5');
+
+
+
+    link1.addEventListener("click", function () {
+        navLinks.style.right = '-200px';
+    })
+
+    link2.addEventListener("click", function () {
+        navLinks.style.right = '-200px';
+    })
+    link3.addEventListener("click", function () {
+        navLinks.style.right = '-200px';
+    })
+    link4.addEventListener("click", function () {
+        navLinks.style.right = '-200px';
+    })
+    link5.addEventListener("click", function () {
+        navLinks.style.right = '-200px';
+    })
+        document.querySelector('.fa-close').addEventListener("click", function () {
+  navLinks.style.right = '-200px';
+
+})
+
+document.querySelector('.gg-menu').addEventListener("click", function () {
+  navLinks.style.right = '0';
+
+})
+    </script>
+</body>
+</html>
